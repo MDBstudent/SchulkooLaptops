@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upgrade Configuration</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <link rel="icon" type="image/x-icon" href="https://images.squarespace-cdn.com/content/v1/5b6aefa8b98a78804f81feda/1544632756166-41YLZDGIB9Z3IA17UG0R/favicon.ico?format=100w">
+</head>
+<body>
+    <main class="page">
+        <section class="card">
+            <h1>Update Configuration</h1>
+            <p class="subtitle">Manage packages and commands that should run during an update.</p>
+
+            <section class="installed-panel">
+                <div class="section-title-row">
+                    <h2>Installed packages across laptops</h2>
+                </div>
+                <ul id="installed-packages-list" class="package-list"></ul>
+                <p class="hint">Clients report their winget output to the server to build this shared list.</p>
+            </section>
+
+            <form id="upgrade-form" class="upgrade-form">
+                <div class="section-block">
+                    <div class="section-title-row">
+                        <h2>Install</h2>
+                        <button type="button" class="add-btn" data-list="install">+ Add</button>
+                    </div>
+                    <div id="install-list" class="item-list"></div>
+                </div>
+
+                <div class="section-block">
+                    <div class="section-title-row">
+                        <h2>Uninstall</h2>
+                        <button type="button" class="add-btn" data-list="uninstall">+ Add</button>
+                    </div>
+                    <div id="uninstall-list" class="item-list"></div>
+                </div>
+
+                <div class="section-block">
+                    <div class="section-title-row">
+                        <h2>Additional Commands</h2>
+                        <button type="button" class="add-btn" data-list="additional">+ Add</button>
+                    </div>
+                    <div id="additional-list" class="item-list"></div>
+                </div>
+
+                <div class="actions">
+                    <button type="submit" class="primary-btn">Save Configuration</button>
+                    <p id="status-message" class="status-message" aria-live="polite"></p>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <script>
+        window.initialUpgradeData = {{ upgrade_data | tojson | safe }};
+        window.initialInstalledPackages = {{ installed_packages | tojson | safe }};
+    </script>
+    <script src="/static/app.js"></script>
+</body>
+</html>

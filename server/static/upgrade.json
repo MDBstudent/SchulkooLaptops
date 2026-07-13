@@ -1,0 +1,13 @@
+{
+    "version": 5,
+    "install": [
+        "Git",
+        "Python",
+        "Zoom"
+    ],
+    "uninstall": [
+        "VS Code",
+        "NodeJS"
+    ],
+    "additional": []
+}

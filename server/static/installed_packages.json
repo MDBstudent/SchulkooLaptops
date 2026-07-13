@@ -1,0 +1,20 @@
+{
+    "version": 5,
+    "packages": [
+        "7-Zip",
+        "ArduinoIDE",
+        "Docker",
+        "GIMP",
+        "Microsoft Teams",
+        "NodeJS",
+        "Notepad++",
+        "OBS Studio",
+        "Postman",
+        "Slack",
+        "Spotify",
+        "VLC",
+        "VS Code",
+        "Visual Studio 2019",
+        "Visual Studio 2022"
+    ]
+}

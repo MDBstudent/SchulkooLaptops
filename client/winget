@@ -1,0 +1,26 @@
+#!/usr/bin/env python3
+import os
+import sys
+
+if len(sys.argv) < 2:
+    print("Usage: winget <command> [args...]")
+    sys.exit(0)
+
+command = sys.argv[1]
+
+if command == "list":
+    print("Name\n----\nGit\nPython\nVS Code\nArduinoIDE\nNodeJS\nDocker\nPostman\nNotepad++\nVLC\n7-Zip\nGIMP\nOBS Studio\nSpotify\nSlack\nZoom\nMicrosoft Teams\nVisual Studio 2019\nVisual Studio 2022")
+    sys.exit(0)
+
+if command == "install":
+    package_name = " ".join(sys.argv[2:]).strip()
+    print(f"Installing {package_name}")
+    sys.exit(0)
+
+if command == "uninstall":
+    package_name = " ".join(sys.argv[2:]).strip()
+    print(f"Uninstalling {package_name}")
+    sys.exit(0)
+
+print(f"Dummy winget received command: {command}")
+sys.exit(0)
