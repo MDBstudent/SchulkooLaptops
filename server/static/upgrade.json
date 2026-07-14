@@ -1,13 +1,12 @@
 {
-    "version": 5,
+    "version": 8,
     "install": [
-        "Git",
-        "Python",
-        "Zoom"
+        "Git.Git",
+        "Microsoft Visual C++ 2015 UWP Desktop Runtime Package"
     ],
     "uninstall": [
-        "VS Code",
-        "NodeJS"
+        "Xbox",
+        "TigerJython-Win64_V2"
     ],
     "additional": []
 }

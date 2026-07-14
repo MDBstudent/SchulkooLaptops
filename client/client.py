@@ -6,7 +6,7 @@ from pathlib import Path
 
 SERVER_URL = os.getenv('SERVER_URL', 'http://localhost:5000')
 SCRIPT_DIR = Path(__file__).resolve().parent
-WINGET_PATH = SCRIPT_DIR / 'winget'
+WINGET_PATH = 'winget'
 
 
 def request_json(url, payload=None):
