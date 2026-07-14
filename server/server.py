@@ -126,10 +126,14 @@ def extract_packages_from_winget_output(text):
         if not columns:
             continue
 
-        package_name = columns[0]
-        if package_name.lower() in {'name', 'id', 'version', 'source'}:
+        if len(columns) >= 2:
+            package_id = columns[1]
+        else:
+            package_id = columns[0]
+
+        if package_id.lower() in {'name', 'id', 'version', 'source'}:
             continue
-        packages.append(package_name)
+        packages.append(package_id)
 
     return sorted(set(packages))
 

@@ -1,6 +1,33 @@
 {
-    "version": 9,
-    "install": [],
-    "uninstall": [],
-    "additional": []
+    "version": 14,
+    "install": [
+        "Adobe.Acrobat.Reader.64-bit",
+        "Audacity.Audacity",
+        "Creality.CrealityPrint",
+        "FreeCAD.FreeCAD",
+        "ARP\\Machine\\X64\\GIMP-3_is1",
+        "Lenovo.SystemUpdate",
+        "MITMediaLab.Scratch.3",
+        "MSIX\\AppUp.IntelGraphicsExperience_1.100.5688.0_x64__8j3eq9eme6ctt",
+        "MSIX\\DolbyLaboratories.DolbyAudioSpeakerSystem_3.30201.210.0_x64__rz1tebttyb220",
+        "MSIX\\Microsoft.BingWeather_4.54.63040.0_x64__8wekyb3d8bbwe",
+        "MSIX\\Microsoft.Copilot_150.0.4078.65_neutral__8wekyb3d8bbwe",
+        "Musescore.Musescore",
+        "PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0",
+        "MSIX\\SynapticsIncorporated.SynapticsControlPanel_19005.19110.0.0_x64__807d65c4rvak2",
+        "MSIX\\SynapticsIncorporated.SynapticsUtilities_1.1.20.0_x64__807d65c4rvak2",
+        "ThielickeITSolutions.TIPP10",
+        "VideoLAN.VLC"
+    ],
+    "uninstall": [
+        "MSIX\\Microsoft.MicrosoftSolitaireCollection_4.25.4290.0_x64__8wekyb3d8bbwe",
+        "MSIX\\Microsoft.Xbox.TCUI_1.24.10001.0_x64__8wekyb3d8bbwe",
+        "MSIX\\Microsoft.XboxGameOverlay_1.54.4001.0_x64__8wekyb3d8bbwe",
+        "MSIX\\Microsoft.XboxGamingOverlay_7.326.6011.0_x64__8wekyb3d8bbwe",
+        "MSIX\\Microsoft.XboxIdentityProvider_12.130.16001.0_x64__8wekyb3d8bbwe",
+        "MSIX\\Microsoft.XboxSpeechToTextOverlay_1.21.13002.0_x64__8wekyb3d8bbwe"
+    ],
+    "additional": [
+        "winget upgrade --all"
+    ]
 }

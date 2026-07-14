@@ -26,8 +26,10 @@ def fetch_upgrade_config():
 
 
 def run_upgrade_steps(config):
+    install_args = ['--accept-source-agreements', '--accept-package-agreements']
+
     for value in config.get('install', []):
-        subprocess.run([str(WINGET_PATH), 'install', value], check=False)
+        subprocess.run([str(WINGET_PATH), 'install', value, *install_args], check=False)
 
     for value in config.get('uninstall', []):
         subprocess.run([str(WINGET_PATH), 'uninstall', value], check=False)
