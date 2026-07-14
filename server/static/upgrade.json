@@ -1,12 +1,6 @@
 {
-    "version": 8,
-    "install": [
-        "Git.Git",
-        "Microsoft Visual C++ 2015 UWP Desktop Runtime Package"
-    ],
-    "uninstall": [
-        "Xbox",
-        "TigerJython-Win64_V2"
-    ],
+    "version": 9,
+    "install": [],
+    "uninstall": [],
     "additional": []
 }

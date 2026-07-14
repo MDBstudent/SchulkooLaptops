@@ -4,7 +4,7 @@ import subprocess
 import urllib.request
 from pathlib import Path
 
-SERVER_URL = os.getenv('SERVER_URL', 'http://localhost:5000')
+SERVER_URL = os.getenv('SERVER_URL', 'http://10.77.5.68:5000/')
 SCRIPT_DIR = Path(__file__).resolve().parent
 WINGET_PATH = 'winget'
 
